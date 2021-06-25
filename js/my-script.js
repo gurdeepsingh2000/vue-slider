@@ -12,6 +12,12 @@ new Vue (
                 ],
                 index_img: 0
         },
+
+        created(){
+            setInterval(() => {
+                this.next()
+            }, 5000);
+        },
         methods:{
             prev: function(){
                 if(this.index_img === 0){
@@ -29,6 +35,18 @@ new Vue (
                 }else{
                     this.index_img++
                 }
-              }
+              },
+
+              isCurrentDot: function(index) {
+                if (index === this.index_img) {
+                    return "current";
+                } else {
+                    return "";
+                }
+            },
+
+            moveTo: function(index) {
+                this.index_img = index;
+            }
         }
     })
