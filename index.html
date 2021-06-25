@@ -16,13 +16,13 @@
     <div id='app'>
         <div class="slider container">
             <div class="row">
-                <div class="col-2 arrow prev">
+                <div class="col-2 arrow" @click= "prev">
                     <i class="fas fa-arrow-circle-left"></i>
                 </div>
                 <div class="col-8 img-slider">
                     <img :src='img1[index_img]' alt="">   
                 </div>
-                <div class="col-2 arrow next">
+                <div class="col-2 arrow" @click = "next">
                     <i class="fas fa-arrow-circle-right"></i></div>
             </div>
         </div>
