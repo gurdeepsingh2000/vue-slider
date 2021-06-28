@@ -8,17 +8,32 @@
     width: 100%;
 }
 
+.left{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.right{
+    display: flex;
+}
+
+.arrow{
+    align-items: center;
+}
+
+
 
 .click-circle{
     display: flex;
     background-color: rgb(0, 0, 0, 0.6);
     justify-content: space-between;
-    width: 150px;
+    width: 20%;
     height: 60px;
     position: absolute;
     bottom: 80px;
-    right: 40%;
-    left: 40%;
+    transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
     border-radius:30px ;
     padding-left: 10px;
     padding-right: 10px;
@@ -31,7 +46,7 @@
 }
 
 .fa-1x{
-    font-size: 25px;
+    font-size: 1.4em;
     color: white;
     line-height: 60px;
 }
