@@ -1,7 +1,6 @@
 .img-slider{
     display: flex;
     justify-content: center;
-    align-content: center;
 }
 
 .img-slider img{
@@ -11,5 +10,31 @@
 
 
 .click-circle{
-    padding-right: 50px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.6);
+    justify-content: space-between;
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    bottom: 80px;
+    right: 40%;
+    left: 40%;
+    border-radius:30px ;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+
+.img-container{
+    position: relative;
+    width: 100%;
+}
+
+.fa-1x{
+    font-size: 25px;
+    color: white;
+    line-height: 60px;
+}
+
+
+

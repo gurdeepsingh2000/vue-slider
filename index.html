@@ -16,17 +16,19 @@
     <div id='app'>
         <div class="slider container">
             <div class="row">
-                <div class="col-2 arrow" @click= "prev">
-                    <i class="fas fa-arrow-circle-left"></i>
+                <div class="col-2 arrow left" @click= "prev">
+                    <i class="fas fa-arrow-circle-left fa-2x"></i>
                 </div>
                 <div class="col-8 img-slider">
+                    <div class="img-container">
                     <img :src='img1[index_img]' alt=""> 
                     <div class="click-circle">
-                        <i :class='isCurrentDot' v-for ="(img , index) in img1" class="fas fa-circle" @click = "moveTo(index)"> </i>
+                        <i :class='isCurrentDot' v-for ="(img , index) in img1" class="fas fa-circle fa-1x" @click = "moveTo(index)"> </i>
+                    </div>
                     </div>  
                 </div>
-                <div class="col-2 arrow" @click = "next">
-                    <i class="fas fa-arrow-circle-right"></i></div>
+                <div class="col-2 arrow right" @click = "next">
+                    <i class="fas fa-arrow-circle-right fa-2x"></i></div>
             </div>
         </div>
     </div>
